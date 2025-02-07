@@ -32,9 +32,9 @@ const USER_INFO: Liveblocks["UserMeta"][] = [
     },
   },
   {
-    id: "jody-hekla@example.com",
+    id: "mahesh@advaitlabs.com",
     info: {
-      name: "Jody Hekla",
+      name: "Mahesh",
       color: "#85BBF0",
       avatar: "https://liveblocks.io/avatars/avatar-5.png",
     },
