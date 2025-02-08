@@ -30,7 +30,7 @@ export function IssuesList({
         Issues
       </div>
       {inReview.length ? (
-        <div className="flex items-center gap-2 bg-neutral-200/60 px-4 py-1.5 text-sm font-medium text-neutral-800 w-full">
+        <div className="flex items-center gap-2 bg-[#000] px-4 py-4 text-sm font-medium text-neutral-800 w-full">
           <ProgressInReviewIcon className="w-4 h-4 text-emerald-500" />
           In Review
         </div>
