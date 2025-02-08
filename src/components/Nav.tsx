@@ -21,13 +21,7 @@ export function Nav() {
   const { isOpen, toggleInbox } = useInbox();
   const pathname = usePathname();
   const [creating, setCreating] = useState(false);
-  const [selectedUser, setSelectedUser] = useState(null); 
 
-  const handleUserSelection = (userId) => {
-    
-    const user = getUser(userId);
-    setSelectedUser(user);
-  };
 
   return (
     <div>
@@ -37,7 +31,7 @@ export function Nav() {
         </div>
       ) : null}
       <div className="text-sm font-semibold p-2 pr-0 flex justify-between items-center mb-2">
-        <Link href="/" className="flex items-center gap-1.5">
+        <Link href="/dashboard" className="flex items-center gap-1.5">
           <span className="w-28 text-black font-semibold">Advait Labs</span>
         </Link>
         <button
@@ -84,11 +78,11 @@ export function Nav() {
           </div>
         </Link>
       )}
-      <Link href="/">
+      <Link href="/dashboard">
         <div
           className={classNames(
             "flex items-center justify-between gap-2 w-full text-sm text-neutral-700 font-semibold p-2 rounded text-left hover:bg-neutral-200",
-            { "bg-neutral-200": pathname === "/" }
+            { "bg-neutral-200": pathname === "/dashboard" }
           )}
         >
           <span className="flex items-center gap-2">
@@ -97,11 +91,6 @@ export function Nav() {
           </span>
         </div>
       </Link>
-      {selectedUser && (
-        <div className="p-2 text-neutral-700">
-          Selected User: {selectedUser.info.name}
-        </div>
-      )}
     </div>
   );
 }

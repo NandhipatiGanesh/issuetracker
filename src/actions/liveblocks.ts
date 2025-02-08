@@ -60,5 +60,5 @@ export async function getRoomsFromIds(roomIds: string[]) {
 
 export async function deleteRoom(roomId: string) {
   await liveblocks.deleteRoom(roomId);
-  redirect("/");
+  redirect("/dashboard");
 }

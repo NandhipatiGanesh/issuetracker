@@ -45,6 +45,7 @@ const initialConfig = liveblocksConfig({
     },
   },
 });
+ 
 
 export function Editor({
   contentFallback,
