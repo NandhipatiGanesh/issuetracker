@@ -15,11 +15,19 @@ import { ComponentProps, useState } from "react";
 import { Loading } from "@/components/Loading";
 import { ProgressInProgressIcon } from "@/icons/ProgressInProgressIcon";
 import { MyIssuesIcon } from "@/icons/MyIssuesIcon";
+import React, { useEffect} from "react";
 
 export function Nav() {
   const { isOpen, toggleInbox } = useInbox();
   const pathname = usePathname();
   const [creating, setCreating] = useState(false);
+  const [selectedUser, setSelectedUser] = useState(null); 
+
+  const handleUserSelection = (userId) => {
+    
+    const user = getUser(userId);
+    setSelectedUser(user);
+  };
 
   return (
     <div>
@@ -89,6 +97,11 @@ export function Nav() {
           </span>
         </div>
       </Link>
+      {selectedUser && (
+        <div className="p-2 text-neutral-700">
+          Selected User: {selectedUser.info.name}
+        </div>
+      )}
     </div>
   );
 }

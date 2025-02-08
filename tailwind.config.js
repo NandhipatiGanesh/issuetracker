@@ -57,7 +57,10 @@ module.exports = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		  borderRadius: {
+			'custom': '50px', // You can name it '50' or 'custom' or anything meaningful
+		  }
   	}
   },
   plugins: [require("tailwindcss-animate")],
