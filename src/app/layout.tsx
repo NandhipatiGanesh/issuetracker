@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="bg-neutral-200/50 text-neutral-900 antialiased h-full w-full overflow-hidden">
         <Providers>{children}</Providers>
 
-        <a
+        {/* <a
           className="fixed bottom-4 right-4"
           href="https://liveblocks.io"
           rel="noreferrer"
@@ -54,7 +54,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               className=""
             />
           </picture>
-        </a>
+        </a> */}
       </body>
     </html>
   );

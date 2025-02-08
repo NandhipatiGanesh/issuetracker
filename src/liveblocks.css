@@ -3,7 +3,7 @@
 
 /* Adjust default styles, except for tooltips, and in-editor highlights & mentions */
 .lb-root:not(.lb-tooltip, .lb-lexical-thread-mark, .lb-lexical-mention) {
-  --lb-accent: theme("colors.accent");
+  --lb-accent: theme("colors.accent.DEFAULT");
   --lb-background: theme("colors.white");
   --lb-foreground: theme("colors.neutral[900]");
   --lb-foreground-subtle: theme("colors.neutral[200]");
