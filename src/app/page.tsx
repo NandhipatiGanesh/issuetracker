@@ -1,16 +1,20 @@
-import { LoginForm } from "@/components/login-form"
+import { Nav } from "@/components/Nav";
+import { liveblocks } from "@/liveblocks.server.config";
+import { RoomWithMetadata } from "@/config";
+import { IssuesList } from "@/components/IssuesList";
 
-export default function LoginPage() {
+export const revalidate = 0;
+
+export default async function PageIssue() {
+  const rooms = (await liveblocks.getRooms()).data as RoomWithMetadata[];
   return (
-    <div className="flex  min-h-svh flex-col items-center justify-center " style={{ backgroundColor: '#f6f8fc' }}>
-      <div className="w-[80%]" style={{
-        border: ' 1px solid #ebeff6',
-        boxShadow: ' 0 6px 20px 0 #14142b0f',
-        borderRadius: '3rem',
-        overflow: 'hidden',
-      }}>
-        <LoginForm />
-      </div>
+    <div className="flex flex-row h-full">
+      <nav className="p-2 w-[200px] xl:w-[250px]">
+        <Nav />
+      </nav>
+      <main className="m-2 border flex-grow bg-neutral-50 rounded">
+        <IssuesList initialRooms={rooms} />
+      </main>
     </div>
-  )
+  );
 }
