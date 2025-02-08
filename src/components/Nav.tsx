@@ -78,11 +78,11 @@ export function Nav() {
           </div>
         </Link>
       )}
-      <Link href="/dashboard">
+      <Link href="/">
         <div
           className={classNames(
             "flex items-center justify-between gap-2 w-full text-sm text-neutral-700 font-semibold p-2 rounded text-left hover:bg-neutral-200",
-            { "bg-neutral-200": pathname === "/dashboard" }
+            { "bg-neutral-200": pathname === "/" }
           )}
         >
           <span className="flex items-center gap-2">
