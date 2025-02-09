@@ -6,9 +6,9 @@ import "../globals.css";
 import "../liveblocks.css";
 
 export const metadata: Metadata = {
-  title: "Liveblocks",
+  title: "Issue Tracker - Web Team",
   description:
-    "This example shows how to build a project manager using Liveblocks, and Next.js.",
+    "This simple issue tracker for web team for Advait using a open source Next.js site with Liveblocks.",
 };
 
 const inter = Inter({
