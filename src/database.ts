@@ -39,30 +39,30 @@ const USER_INFO: Liveblocks["UserMeta"][] = [
       avatar: "https://liveblocks.io/avatars/avatar-5.png",
     },
   },
-  {
-    id: "emil-joyce@example.com",
-    info: {
-      name: "Emil Joyce",
-      color: "#8594F0",
-      avatar: "https://liveblocks.io/avatars/avatar-6.png",
-    },
-  },
-  {
-    id: "jory-quispe@example.com",
-    info: {
-      name: "Jory Quispe",
-      color: "#85DBF0",
-      avatar: "https://liveblocks.io/avatars/avatar-7.png",
-    },
-  },
-  {
-    id: "quinn-elton@example.com",
-    info: {
-      name: "Quinn Elton",
-      color: "#87EE85",
-      avatar: "https://liveblocks.io/avatars/avatar-8.png",
-    },
-  },
+  // {
+  //   id: "emil-joyce@example.com",
+  //   info: {
+  //     name: "Emil Joyce",
+  //     color: "#8594F0",
+  //     avatar: "https://liveblocks.io/avatars/avatar-6.png",
+  //   },
+  // },
+  // {
+  //   id: "jory-quispe@example.com",
+  //   info: {
+  //     name: "Jory Quispe",
+  //     color: "#85DBF0",
+  //     avatar: "https://liveblocks.io/avatars/avatar-7.png",
+  //   },
+  // },
+  // {
+  //   id: "quinn-elton@example.com",
+  //   info: {
+  //     name: "Quinn Elton",
+  //     color: "#87EE85",
+  //     avatar: "https://liveblocks.io/avatars/avatar-8.png",
+  //   },
+  // },
 ];
 
 export function getRandomUser() {
